@@ -1,0 +1,1078 @@
+<ui version="4.0" >
+ <class>myMainWindowClass</class>
+ <widget class="QMainWindow" name="myMainWindowClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1099</width>
+    <height>741</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>  Cornell Anonymization Toolkit</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff>cornell-bigred.png</normaloff>cornell-bigred.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QTabWidget" name="tabWidget_data" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>15</y>
+      <width>641</width>
+      <height>305</height>
+     </rect>
+    </property>
+    <property name="currentIndex" >
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_original" >
+     <attribute name="title" >
+      <string>Original Data</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_original" >
+      <property name="geometry" >
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>629</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_generalized" >
+     <attribute name="title" >
+      <string>Generalized Data</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_generalized" >
+      <property name="geometry" >
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>629</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_deleted" >
+     <attribute name="title" >
+      <string>Deleted Data</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_deleted" >
+      <property name="geometry" >
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>629</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>1081</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>1081</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3" >
+    <property name="geometry" >
+     <rect>
+      <x>670</x>
+      <y>430</y>
+      <width>421</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4" >
+    <property name="geometry" >
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>20</width>
+      <height>684</height>
+     </rect>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>680</y>
+      <width>1081</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6" >
+    <property name="geometry" >
+     <rect>
+      <x>1080</x>
+      <y>10</y>
+      <width>20</width>
+      <height>684</height>
+     </rect>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7" >
+    <property name="geometry" >
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>20</width>
+      <height>684</height>
+     </rect>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_risk" >
+    <property name="geometry" >
+     <rect>
+      <x>679</x>
+      <y>16</y>
+      <width>401</width>
+      <height>270</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>680</x>
+      <y>450</y>
+      <width>401</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" >
+     <item>
+      <spacer name="verticalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget_bk" />
+     </item>
+     <item>
+      <spacer name="verticalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>120</width>
+         <height>78</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>680</x>
+      <y>630</y>
+      <width>401</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" >
+     <item>
+      <widget class="QSlider" name="horizontalSlider_bk" >
+       <property name="maximumSize" >
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinBox_bk" />
+     </item>
+     <item>
+      <widget class="QLabel" name="label_bk" >
+       <property name="text" >
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>680</x>
+      <y>660</y>
+      <width>401</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" >
+     <item>
+      <widget class="QPushButton" name="pushButton_evaluaterisk" >
+       <property name="text" >
+        <string>Evaluate Risk</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>258</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_last" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>325</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Last Page</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_next" >
+    <property name="geometry" >
+     <rect>
+      <x>100</x>
+      <y>325</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Next Page</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_utility" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>641</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="currentIndex" >
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab_contigencytable" >
+     <attribute name="title" >
+      <string>Contingency Tables</string>
+     </attribute>
+     <widget class="QLabel" name="label_x_dimension" >
+      <property name="geometry" >
+       <rect>
+        <x>12</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>X Attribute</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_x_dimension" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_y_dimension" >
+      <property name="geometry" >
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Y Attribute</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_compare" >
+      <property name="geometry" >
+       <rect>
+        <x>320</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Compare</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_y_dimension" >
+      <property name="geometry" >
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_original_2" >
+      <property name="geometry" >
+       <rect>
+        <x>130</x>
+        <y>280</y>
+        <width>46</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt; font-weight:600;">Original&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_generalized_2" >
+      <property name="geometry" >
+       <rect>
+        <x>440</x>
+        <y>280</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt; font-weight:600;">Generalized&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_contingency_original" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>301</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_contingency_generalized" >
+      <property name="geometry" >
+       <rect>
+        <x>320</x>
+        <y>60</y>
+        <width>301</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_gof" >
+      <property name="geometry" >
+       <rect>
+        <x>450</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Goodness of fit</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_gof" >
+      <property name="geometry" >
+       <rect>
+        <x>540</x>
+        <y>20</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_densitygraph" >
+     <attribute name="title" >
+      <string>Joint Densities</string>
+     </attribute>
+     <widget class="QLabel" name="label_x_dimension_2" >
+      <property name="geometry" >
+       <rect>
+        <x>182</x>
+        <y>20</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>X Attribute</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_y_dimension_2" >
+      <property name="geometry" >
+       <rect>
+        <x>320</x>
+        <y>20</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Y Attribute</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_x_dimension_2" >
+      <property name="geometry" >
+       <rect>
+        <x>240</x>
+        <y>20</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_y_dimension_2" >
+      <property name="geometry" >
+       <rect>
+        <x>380</x>
+        <y>20</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_original" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>301</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_generalized" >
+      <property name="geometry" >
+       <rect>
+        <x>320</x>
+        <y>60</y>
+        <width>301</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_original" >
+      <property name="geometry" >
+       <rect>
+        <x>130</x>
+        <y>280</y>
+        <width>46</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt; font-weight:600;">Original&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_generalized" >
+      <property name="geometry" >
+       <rect>
+        <x>440</x>
+        <y>280</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt; font-weight:600;">Generalized&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_compare_2" >
+      <property name="geometry" >
+       <rect>
+        <x>480</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Compare</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab" >
+     <attribute name="title" >
+      <string>Marginal Densities</string>
+     </attribute>
+     <widget class="QLabel" name="label_dimension" >
+      <property name="geometry" >
+       <rect>
+        <x>262</x>
+        <y>20</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Attribute</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_dimension" >
+      <property name="geometry" >
+       <rect>
+        <x>320</x>
+        <y>20</y>
+        <width>69</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_compare_3" >
+      <property name="geometry" >
+       <rect>
+        <x>430</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>Compare</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_original_2" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>301</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_original_3" >
+      <property name="geometry" >
+       <rect>
+        <x>130</x>
+        <y>280</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Distributions&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_generalized_3" >
+      <property name="geometry" >
+       <rect>
+        <x>440</x>
+        <y>280</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600;">Residuals&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_generalized_2" >
+      <property name="geometry" >
+       <rect>
+        <x>320</x>
+        <y>60</y>
+        <width>301</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_verifier" >
+    <property name="geometry" >
+     <rect>
+      <x>680</x>
+      <y>370</y>
+      <width>321</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <property name="currentIndex" >
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_diversity" >
+     <property name="accessibleName" >
+      <string/>
+     </property>
+     <attribute name="title" >
+      <string>L-Diversity</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>301</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" >
+       <item>
+        <widget class="QLabel" name="label_l" >
+         <property name="text" >
+          <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt; font-weight:600; font-style:italic;"> l &lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="horizontalSlider_l" >
+         <property name="minimumSize" >
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize" >
+          <size>
+           <width>50</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_l" />
+       </item>
+       <item>
+        <widget class="QLabel" name="label_c" >
+         <property name="text" >
+          <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:8pt;"> &lt;/span>&lt;span style=" font-size:8pt; font-weight:600; font-style:italic;">c&lt;/span>&lt;span style=" font-size:8pt;"> &lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="horizontalSlider_c" >
+         <property name="minimumSize" >
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize" >
+          <size>
+           <width>50</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_c" />
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_closeness" >
+     <attribute name="title" >
+      <string>T-Closeness</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_7" >
+       <item>
+        <widget class="QLabel" name="label_t" >
+         <property name="text" >
+          <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">&lt;span style=" font-weight:600; font-style:italic;">t&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="horizontalSlider_t" >
+         <property name="minimumSize" >
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize" >
+          <size>
+           <width>50</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_t" >
+         <property name="decimals" >
+          <number>3</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_generalize" >
+    <property name="geometry" >
+     <rect>
+      <x>1005</x>
+      <y>402</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Generalize</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>680</x>
+      <y>290</y>
+      <width>401</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5" >
+     <item>
+      <widget class="QLabel" name="label_threshold" >
+       <property name="text" >
+        <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Threshold   &lt;/p>&lt;/body>&lt;/html></string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="horizontalSlider_threshold" >
+       <property name="maximumSize" >
+        <size>
+         <width>250</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_threshold" />
+     </item>
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>17</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_tuples" >
+       <property name="text" >
+        <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">Num. Tuples&lt;/p>&lt;/body>&lt;/html></string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_number_deleted" >
+       <property name="maximumSize" >
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_delete" >
+       <property name="text" >
+        <string>Delete</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>680</x>
+      <y>320</y>
+      <width>401</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6" >
+     <item>
+      <widget class="QLabel" name="label_rescale" >
+       <property name="text" >
+        <string>Rescale Starting Point</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="horizontalSlider_rescale" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_rescale" />
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>18</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_rescale" >
+       <property name="text" >
+        <string>Rescale</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1099</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionLoadData" />
+    <addaction name="actionLoadHierarchy" />
+    <addaction name="actionPublish" />
+    <addaction name="separator" />
+    <addaction name="actionExit" />
+   </widget>
+   <widget class="QMenu" name="menuEdit" >
+    <property name="title" >
+     <string>History</string>
+    </property>
+    <addaction name="actionShowLog" />
+   </widget>
+   <widget class="QMenu" name="menu_Help" >
+    <property name="title" >
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout" />
+   </widget>
+   <widget class="QMenu" name="menuSpecify" >
+    <property name="title" >
+     <string>View</string>
+    </property>
+    <addaction name="actionMetaData" />
+    <addaction name="actionGeneralization" />
+   </widget>
+   <addaction name="menu_File" />
+   <addaction name="menuSpecify" />
+   <addaction name="menuEdit" />
+   <addaction name="menu_Help" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="actionExit" >
+   <property name="text" >
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+  <action name="aboutQtAction" >
+   <property name="text" >
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="editStyleAction" >
+   <property name="text" >
+    <string>Edit &amp;Style...</string>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="text" >
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionLoadData" >
+   <property name="text" >
+    <string>Load data..</string>
+   </property>
+  </action>
+  <action name="actionLoadHierarchy" >
+   <property name="text" >
+    <string>Initialize..</string>
+   </property>
+  </action>
+  <action name="actionSelectSensitive" >
+   <property name="text" >
+    <string>Select Sensitive Col..</string>
+   </property>
+  </action>
+  <action name="actionShowLog" >
+   <property name="text" >
+    <string>Show Log</string>
+   </property>
+  </action>
+  <action name="actionPublish" >
+   <property name="text" >
+    <string>Publish..</string>
+   </property>
+  </action>
+  <action name="actionMetaData" >
+   <property name="text" >
+    <string>Metadata..</string>
+   </property>
+  </action>
+  <action name="actionGeneralization" >
+   <property name="text" >
+    <string>Generalization..</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,211 @@
+<ui version="4.0" >
+ <class>myOpengeneralizationClass</class>
+ <widget class="QWidget" name="myOpengeneralizationClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>245</width>
+    <height>194</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle" >
+   <string>Generlization Information</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff>./cornell-bigred.png</normaloff>./cornell-bigred.png</iconset>
+  </property>
+  <widget class="QLabel" name="label_name" >
+   <property name="geometry" >
+    <rect>
+     <x>26</x>
+     <y>60</y>
+     <width>38</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Name:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_name" >
+   <property name="geometry" >
+    <rect>
+     <x>72</x>
+     <y>60</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_level" >
+   <property name="geometry" >
+    <rect>
+     <x>26</x>
+     <y>86</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Generalize to Level:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_level" >
+   <property name="geometry" >
+    <rect>
+     <x>144</x>
+     <y>86</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Line" name="line" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2" >
+   <property name="geometry" >
+    <rect>
+     <x>2</x>
+     <y>47</y>
+     <width>16</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4" >
+   <property name="geometry" >
+    <rect>
+     <x>212</x>
+     <y>47</y>
+     <width>16</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_weight" >
+   <property name="geometry" >
+    <rect>
+     <x>26</x>
+     <y>112</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Generalization Weight:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_weight" >
+   <property name="geometry" >
+    <rect>
+     <x>144</x>
+     <y>112</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_qi" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>10</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>211</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" >
+    <item>
+     <widget class="QPushButton" name="pushButton_ok" >
+      <property name="text" >
+       <string>Okay</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_3" >
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0" >
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_cancel" >
+      <property name="text" >
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_attribute" >
+   <property name="geometry" >
+    <rect>
+     <x>11</x>
+     <y>11</y>
+     <width>87</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Choose Attributes</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
